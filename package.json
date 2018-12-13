@@ -1,0 +1,23 @@
+{
+  "name": "todo_deploy",
+  "version": "1.0.0",
+  "description": "\"End Points for Todo App\"",
+  "main": "server.js",
+  "dependencies": {
+    "mongoose": "^5.3.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakshan1996/Todo_deploy.git"
+  },
+  "author": "Devil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rakshan1996/Todo_deploy/issues"
+  },
+  "homepage": "https://github.com/rakshan1996/Todo_deploy#readme"
+}
