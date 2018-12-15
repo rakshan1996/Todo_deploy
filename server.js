@@ -35,6 +35,14 @@ app.post('/todos',(req,res)=>{
     });
 });
 
+app.get('/todos',(req,res)=>{
+    User.find().then((users)=>{
+        res.send({users});
+    },(e)=>{
+        res.status(400).send(e);
+    })
+});
+
 
 
 
