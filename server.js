@@ -22,6 +22,20 @@ newUser.save().then((doc)=>{
 
 var app=express();
 
+app.use(bodyParser.json());
+app.post('/todos',(req,res)=>{
+    var user= new User({
+        FirstName:req.body.name,
+        email:req.body.email
+    });
+    user.save().then((doc)=>{
+        res.send(doc);
+    },(e)=>{
+        res.send("Server unavailable");
+    });
+});
+
+
 
 
 app.listen(3000,()=>{
